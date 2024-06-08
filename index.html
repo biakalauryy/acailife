@@ -1630,7 +1630,7 @@ owa_cmds.push(['trackPageView']);
     <div id="modalWindow" class="modal hide">
       <div class="modal-body">
         <div class="modal-body">
-          Carregando conteúdo, um minutinho...
+          Carregando conteúdo,um minutinho...
         </div>
       </div>
     </div>
@@ -1645,6 +1645,7 @@ owa_cmds.push(['trackPageView']);
     <div id="modalContato" class="modal hide" tabindex="-1" aria-labelledby="modalContatoLabel" aria-hidden="true">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="icon-remove"></i></button>
+        <span class="titulo cor-secundaria">Fale Conosco</span>
         Preencha o formulário abaixo.
       </div>
       <form action="/contato/popup/" method="post" class="form-horizontal">
@@ -1656,6 +1657,11 @@ owa_cmds.push(['trackPageView']);
       </form>
     </div>
 
+    
+      
+    
+
+    
       <div id="AdicionarFavoritoSucessoModal" class="modal hide" aria-modal="true" tabindex="-1" role="dialog">
         <div class="modal-header">
           <span>Favorito adicionado</span>
@@ -1665,7 +1671,7 @@ owa_cmds.push(['trackPageView']);
         </div>
         <div class="modal-footer">
           <a class="botao" data-dismiss="modal" aria-hidden="true">Fechar</a>
-          <a class="botao principal" href="">Visualizar Lista de Desejos</a>
+          <a class="botao principal" href="https://www.graosdeacai.com.br/conta/favorito/listar">Visualizar Lista de Desejos</a>
         </div>
       </div>
 
@@ -1718,7 +1724,7 @@ owa_cmds.push(['trackPageView']);
       </span>
       <span class="avise-descr">
         Esse produto encontra-se indisponível.<br />
-        
+        Deixe seu e-mail que avisaremos quando chegar.
       </span>
       <div class="avise-input">
         <div class="controls controls-row">
@@ -1742,12 +1748,48 @@ owa_cmds.push(['trackPageView']);
   <span class="avise-suc-tit cor-principal">
     Obrigado!
   </span>
+  <span class="avise-suc-descr">
+    Você receberá um e-mail de notificação, assim que esse produto estiver disponível em estoque
+  </span>
 </div>
+
+
+    
+
+    
+    
+
 
   <div id="avisoCookies">
     <div class="conteiner">
+      
+        
+      
+        
+      
+        
+      
+        
+          <p>Utilizamos cookies para que você tenha a melhor experiência em nosso site. Para saber mais acesse nossa página de
+            <a href="https://www.graosdeacai.com.br/pagina/politicas-de-privacidade.html" target="_blank" title="Política de Privacidade">
+              <strong>Política de Privacidade</strong>
+            </a>
+          </p>
           <button type="button" id="btn-aceito-cookies" class="botao principal">Entendi</button>
-
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
       </div>
   </div>
  
@@ -1806,15 +1848,15 @@ var tel2 = '';
 var tel2i = '';
 var tel3 = '';
 var tel3i = '';
-var mailTxt = '';
+var mailTxt = 'E-mail';
 var mailN = 13;
-var mail1 = '';
+var mail1 = 'contato@guamapolpas.com.br';
 var mail1i = '';
 var mail2 = '';
 var mail2i = '';
 var mail3 = '';
 var mail3i = '';
-var spTxt = '';
+var spTxt = 'Vamos conversar?';
 var sp1 = '';
 var sp1i = '';
 var sp2 = '';
@@ -1833,9 +1875,9 @@ var ccS = true;
 var alertaF = true;
 var alertaV = 2;
 var alertaTxt = 'FRETE GRÁTIS';
-var alertaSD = '25.00';
-var alertaSL = '25.00';
-var alertaCO = '25.00';
+var alertaSD = '125.00';
+var alertaSL = '125.00';
+var alertaCO = '125.00';
 var alertaNE = '';
 var alertaNT = '';
 var alerta1 = '';
@@ -1856,23 +1898,23 @@ var cCartB = '';
 var dPx = false;
 var dPN = 'Ganhe mais desconto';
 var dPxE = 2;
-var dPP = '100% Açaí';
+var dPP = '100% Grãos de Açaí';
 var dPT = 1;
 var dPV = 1;
 var dP1q = 5;
 var dP1d = 5;
-var dP1c = '';
+var dP1c = '5%OFFCAFÉ';
 var dP2q = 10;
 var dP2d = 10;
-var dP2c = '';
+var dP2c = '10%OFFCAFÉ';
 var dP3q = 15;
 var dP3d = 15;
-var dP3c = '';
+var dP3c = '15%OFFCAFÉ';
 var agE = false;
 var agEH = 3;
 var agED = 3;
 var agET = 2;
-var agEN = '07/06/2024';
+var agEN = '07/12/2022';
 var ebPx = false;
 var ebPP = '';
 var ebPV = 5;
@@ -1901,11 +1943,11 @@ var iconeCategoria9 = '';
 var iconeCategoria10 = '';
 
 var paginaMenu1 = 'Politica de Frete';
-var paginaMenu1Link = '';
+var paginaMenu1Link = 'https://www.graosdeacai.com.br/pagina/politica-de-frete.html';
 var paginaMenu2 = 'Trocas e Devoluções';
-var paginaMenu2Link = '';
+var paginaMenu2Link = 'https://www.graosdeacai.com.br/pagina/politica-de-trocas-e-devolucoes.html';
 var paginaMenu3 = 'Quem somos';
-var paginaMenu3Link = '';
+var paginaMenu3Link = 'https://www.graosdeacai.com.br/pagina/quem-somos.html';
 
 ////// Ofertas
 var ofertas = true;
@@ -1919,7 +1961,7 @@ var ofertasTimer = true;
 var ofertasTimerData = '31/12/2022';
 
 ////// Banners
-var fullFundo = '';
+var fullFundo = 'https://cdn.awsli.com.br/2535/2535459/arquivos/Banner Cafe de Acai Guama Polpas Principal.jpg';
 var tarjaAvancado = true;
 var tarja1Icone = 'iconeCartao';
 var tarja1Txt = 'Parcelamento';
@@ -1927,7 +1969,7 @@ var tarja1Sub = 'Até 3x sem juros';
 var tarja1Link = '';
 var tarja2Icone = 'iconeBrasil';
 var tarja2Txt = 'Entregamos';
-var tarja2Sub = 'Em todo ';
+var tarja2Sub = 'Em todo Brasil';
 var tarja2Link = '';
 var tarja3Icone = 'icone24';
 var tarja3Txt = 'Envio em até 8h';
