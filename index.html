@@ -1912,52 +1912,7 @@ owa_cmds.push(['trackPageView']);
       
       </div>
   </div>
-  <script>
-    $(function() {
-      try {
-        var cookieAvisoCookie = $.cookie('AvisoCookie'),
-            dataAvisoCookie = new Date(parseInt(cookieAvisoCookie)).getTime(),
-            dataModicacaoPoliticaPrivacidade = new Date('2022-12-07 14:58:25.383249').getTime();
-        if ($('#avisoCookies').length) {
-          
-          if (dataAvisoCookie < dataModicacaoPoliticaPrivacidade) {
-            $.removeCookie('AvisoCookie', { path: '/' });
-          }
-
-          if (!$.cookie('AvisoCookie')) {
-            $('body').addClass('mostrarAvisoCookie');
-          }
-
-          
-          $('#avisoCookies #btn-aceito-cookies').click(function() {
-            $.cookie('AvisoCookie', dataModicacaoPoliticaPrivacidade, { expires: 365, path: '/' });
-            $('body').removeClass('mostrarAvisoCookie');
-          });
-        }
-      } catch (e) {
-        console.error(e);
-      }
-    });
-  </script>
-
-
-
-    
-    
-
-
-
-
-    <!--googleon: all-->
-
-    
-    
-        
-      
-
-      
-	<!-- Configuração Inicial -->
-  
+ 
       <script>
 // Configuração inicial - Grand Store Cozinha
 var avisoConfig = ''; // Nao mexer
